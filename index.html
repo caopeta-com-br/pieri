@@ -1,362 +1,263 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt_br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <meta name="author" content="Pieri">
     <meta name="description" content=" Site de apresentação do trabalho e carreira de Gabriel Pieri.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pieri</title>
 
-    <style>
+     <style>
 
         body{
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 20px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #ffffff;
+            background-color: #0c0c0c;
             background-image: url(bg.png);
-            background-repeat: no-repeat ;
-            background-size:cover;
+            background-repeat: no-repeat;
+            background-size: cover;
             background-attachment:fixed;
-            margin: auto;
-            padding: 5% 20% 5% 20%;;
-            border-top: 10px solid #73e921;
+        }
+
+        header{
+            background-color: #67aa36;
         }
 
         .logo{
-
-            
-            width: 30%;
-            margin: 0% 35% 5% 35%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
+            max-width:100%
+            height: auto;
         }
 
-        .autor{
-
-            float: inline-start;
-            margin: 15px 30px 5px 0px;
-            border: 10px solid #73e921;
-            max-width:100%;height:auto;"
+        main{
+            width: auto%;
+            height: auto%;
+            margin: auto;
+            padding: 5% 10% 5% 10%;
         }
-
-        .quem{
-
-            margin-bottom: 100px;
-            text-align: justify;
-            text-indent: 0px;
-            line-height: 1.2;
-            word-spacing: -6px;
-
-        }
-
-        .obra{
-
-            font-size: 35px;
-            margin: 15px 0px 15px 0px;
-        }
-
-        .malagueta{
-            padding: 20px;
-            text-align: justify;
-            text-indent: 0px;
-            line-height: 1.2;
-            word-spacing: -6px;
-            margin-top: 50px;
-        }
-
-        .capamalagueta{
-
-            float: right;
-            margin: 10px 0px 5px 50px;
-            border: 10px solid #73e921;
-            max-width:100%;height:auto;"
-        }
-
-
-        .irauna{
-            padding: 20px;
-            text-align: justify;
-            text-indent: 0px;
-            line-height: 1.2;
-            word-spacing: -6px;
-            margin-top: 50px;
-        }
-
-        .capairauna{
-
-            float: left;
-            margin: 50px 50px 5px 0px;
-            border: 10px solid #73e921;
-            max-width:100%;height:auto;"
-            
-        }
-
-        .alcance{
-
-            padding: 20px;
-            margin-bottom: 100px;
-            text-align: justify;
-            text-indent: 0px;
-            line-height: 1.2;
-            word-spacing: -6px;
-        }
-
-        .redes{
-
-            float: right;
-            margin: 10px 0px 5px 50px;
-            border: 10px solid #73e921;
-        }
-
-
-        .eventos ul{
-
-            color: #73e921;
-            margin: 5px 20px 30px 20px
-            font-size: 20px; 
-        }
-
-        .eventos li{
-
-            margin-bottom: 50px;
-            
-        }
-
-
-        .evento{
-
-            float: right;
-            margin: 10px 10px 20px 20px;
-            border: 10px solid #73e921;
-            max-width:100%;height:auto;"
-
-        }
-
-        .arte{
-
-            margin: 120px 50px 5px 0px;
-            text-indent: 0px;
-            line-height: 1.2;
-            word-spacing: -6px;
-        }
-
-        .scroll-container{
-
-           
-            overflow: auto;
-            white-space: nowrap;
-            padding: 10px;
-            margin: 10px 0px 30px 0px;
-        }
-
-        .scroll-container img{
-            width: 250px;
-            padding: 10px;
-        }
-
-        footer{
-
-            background-color: #73e921;
-            margin: 0px;
-
-        }
-
-        .links{
-
-    
-            text-align: right;
-            list-style-type: none;
-            margin: 0px 10px 0px 0px;
-        }
-
-        .links li{
-            padding: 5px;
-            display: inline-block;
-            color: black;
-        }
-
-        .links a{
-            font-weight: bold;
-            padding: 5px;
-            text-transform: uppercase;
-            text-decoration: none;
-            color: black;
-        }
-
-        .links a:hover{
-
-            color: #3a7211;
-
-
-        }
-
-        .contato{
-
-            color: black;
-            margin: 5px 0px 5px 10px;
-
-        }
-        
 
         h1{
-            color: #73e921;
+            text-transform: uppercase;
+            font-weight: bolder;
+            color:#67aa36;
+            margin: 0px 0px 0px 0px;
         }
 
         h2{
-            color: #73e921;
-            margin-bottom: 3px;
-            font-size: 35px;
+            color:#67aa36;
+            font-size:large;
+            margin: 0px 0px 10px 0px;
         }
 
         h3{
-            color: #73e921;
-            margin-bottom: 3px;
-            font-size: 25px;
+            color:#67aa36;
+            margin-top: 20px;
+            margin-bottom: 0px;
+            font-size: x-large;
         }
 
-        h5{
-            color: antiquewhite;
-        }
-
-        p{
-            color: antiquewhite;
+        h4{
+            color: #67aa36;
+            font-size: small;
+            margin-top: 5px;
         }
 
         a{
-
             color: #73e921;
             text-decoration: none;
             font-weight: bold;
         }
 
         a:hover{
-
             color: #356b0e;
-
-
         }
 
         b{
-           color: #73e921;
+            color: #67aa36;
         }
 
-        ul{
-            color: antiquewhite;
+        @media (min-width:600px) {
+        .quem {
+        padding: 0% 20% 0% 20%;
+        text-align: left;
+         }
         }
+
+        .quem img{
+        float:left;
+        margin: 10px 20px 20px 0px;
+        border: 10px solid #67aa36;
+        }
+
+
+        @media (min-width:600px) {
+        .malagueta {
+        padding: 5% 20% 5% 20%;
+        text-align: left;
+         }
+        }
+
+        .malagueta img{
+            float:right;
+            margin: 10px 0px 20px 20px;
+            border: 10px solid #67aa36;
+        }
+
+        @media (min-width:600px) {
+        .irauna {
+        padding: 5% 20% 5% 20%;
+        text-align: left;
+         }
+        }
+
+        .irauna img{
+        float:left;
+        margin: 10px 20px 20px 0px;
+        border: 10px solid #67aa36;
+        }
+
+        @media (min-width:600px) {
+        .alcance {
+        padding: 5% 20% 5% 20%;
+        text-align: left;
+         }
+        }
+
+        .alcance img{
+            float:right;
+            margin: 10px 0px 20px 20px;
+            border: 10px solid #67aa36;
+        }
+
+        @media (min-width:600px) {
+        .eventos {
+        padding: 2% 20% 5% 20%;
+        text-align: left;
+        font-size: large;
+         }
+        }
+
+        @media (min-width:600px) {
+        .trabalhos {
+        padding: 2% 20% 0% 20%;
+        text-align: left;
+        font-size: large;
+         }
+        }
+        
+        .container{
+            overflow: auto;
+            white-space: nowrap;
+        }
+
+        .container img{
+            width: 200px;
+        }
+
+        footer{
+            color: #15240b;
+            background-color: #67aa36;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+            text-align: center;
+            padding: 5px;
+        }
+
+        footer a{
+            color:#0c0c0c
+        }
+
+        footer li{
+            display:inline-block
+        }
+
     </style>
-
-
 </head>
 
 
 <body>
 
-    <header class="boasvindas">
-    
-        <img class="logo" src="assinatura.png" alt="Assinatura Pieri" width="280px">
+    <header>
 
-    </header>
+        <img class="logo" src="assinatura.png" alt="Assinatura Pieri" width="160px">
+    </header>   
 
-        <main>
+    <main>
 
-            <div class="quem">
+        <div class="quem">
+            <h1>Gabriel Pieri</h1>
+            <h2>Quadrinista</h2>
+            <img src="autor.jpg" alt="Pieri autografando um exemplar de Malagueta." width="240px">
+            <h3>Quem é?</h3>
+            <p>Meu nome é <b>Gabriel Pieri</b> (1994), mas amigos e público me chamam apenas pelo sobrenome, Pieri, e assim acredito que acabou se tornando minha alcunha de artista. Nasci e cresci em São Paulo, capital, e gostava de desenhar as ruas da cidade, cães e caveiras, então optei por fazer disso uma carreira. Inspirado por Angeli, Shiko, Liberatore e Hayashida Q, fui fazer quadrinhos e em 2020 publiquei minha primeira série, <b><i> <a href="https://www.veneta.com.br/shop/malagueta-351" target="_blank"> Malagueta</a></i></b>, (Veneta, 2022), nas redes sociais. Hoje, publico meu quadrinho mais extenso, <b><i> <a href="https://editorajbc.com.br/jbstudios/colecao/irauna-do-olhar-ambar/" target="_blank"> Iraúna do Olhar Âmbar</a></i></b>, (JBC, 2024).</p>
+
+            <p>Possuo um traço que tem diversas influências, mas o mangá é o mais promeniente. Os meus título são todos ficções que perambulam por diversos genêros, mas que são lembrados pelo humor escrachado e com momentos de drama. Ambos foram públicados por grandes e premiadas editoras, que cativaram um público fiel e engajado que sempre está ansioso pela próxima página. Abaixo, você poderá conhecer um pouco mais dos meu quadrinhos.</p>
+        </div>
+
+        <div class="malagueta">
+            <img src="capamalagueta.jpg" alt="Capa do Quadrinho Malagueta" width="240px">
+            <h3>Malagueta</h3>
+            <h4>2020, Comédia e Aventura</h4>
+            <p> <b>Malagueta</b> é  minha primeira série de quadrinhos, tendo  sido 
+            lançado em 2020 nas redes sociais. A série começou como tirinhas
+            sobre um cachorro diminuto e terrívelmente zangado que causava terror pelas ruas de São Paulo, até que é adotado por Iara, que tenta em vão controlar a criatura. Por ser descompromissado, com humor xulo e retratar problemas urbanos, os quadrinhos se conectou com várias pessoas, tendo viralizado em várias redes e depois de completo, foi compilado e publicado pela <b>Editora Veneta</b> em 2022.</p>
+        </div>    
             
-            <img src="autor.jpg" class="autor" alt="Pieri autografando um exemplar de Malagueta." width="350px">
-            
-            <h2> Quem é?</h2>
-                <p>Meu nome é <b>Gabriel Pieri</b> (1994), mas amigos e público me chamam apenas pelo sobrenome, Pieri, e assim acredito que acabou se tornando minha alcunha de artista. Nasci e cresci em São Paulo, capital, e gostava de desenhar as ruas da cidade, cães e caveiras, então optei por fazer disso uma carreira. Inspirado por Angeli, Shiko, Liberatore e Hayashida Q, fui fazer quadrinhos e em 2020 publiquei minha primeira série, <b><i> <a href="https://www.veneta.com.br/shop/malagueta-351" target="_blank"> Malagueta</a></i></b>(Veneta, 2022) nas redes sociais. Hoje, publico meu quadrinho mais extenso, <b><i> <a href="https://editorajbc.com.br/jbstudios/colecao/irauna-do-olhar-ambar/" target="_blank"> Iraúna do Olhar Âmbar</a></i></b> .(JBC, 2024). </p> 
+        <div class="irauna">
+            <img src="irauna.jpg" alt="Capa do Primeiro Volume de Iraúna" width="240px">
+            <h3>Iraúna do Olhar Âmbar</h3>
+            <h4>2023, Horror, Comédia e Aventura</h4>
+            <p> <b> Iraúna do Olhar Âmbar</b> é o quadrinho que estou publicando atualmente desde 2023, planejado para ser uma série em três volumes, sendo que o primeiro foi lançado em 2024 pela <b>Editora JBC</b>, no selo JBC Studios. A história de horror e comédia, gira em torno de uma moça que possui habilidade de se comunicar com espirítos, Irene Nogueira, que é chamada por essas entidades de Iraúna. Ela junta essas habilidades com sua profissão de jornalismo, realizando reportangens de figuras estranhas e cômicas. Porém a heroína da história é amaldiçoada por uma poderosa entidade que aterroriza sua família, que cabe a ela encontrar um jeito de se livrar desse terror.</p>
+        </div>
 
-                <p> Possuo um traço que tem diversas influências, mas o mangá é o mais promeniente. Os meus título são todos ficções que perambulam por diversos genêros, mas que são lembrados pelo humor escrachado e com momentos de drama. Ambos foram públicados por grandes e premiadas editoras, que cativaram um público fiel e engajado que sempre está ansioso pela próxima página. Abaixo, você poderá conhecer um pouco mais dos meu quadrinhos.</p>
-            </div>
+        <div class="alcance">
+            <img src="redesosciais.jpg" alt="Prints de números de seguidores em redes sociais" width="240">
+            <h3>Alcance</h3>
+            <p>Meu trabalho é conhecido e publicado em redes sociais diferentes, tendo alcançado um público diverso e jovem, sendo bastante conectado com fãs de mangás, animes, jogos e terror. São bastante engajados e que formam comunidades em redes de canais fechados como WhatssApp e Discord. E também trata-se de um público bastante presente em eventos de cultura pop, esses eventos são os principais locais que tenho contato presecial com meus leitores. </p>
+        </div>
 
-            <div class="malagueta">>
+        <div class="eventos">
+            <h3> Já participei de eventos como:</h3>
+            <ul>
+                <li>Anime Friends 2022, 2023</li>
+                <li>Buntantã Gibicon 2022</li>
+                <li>Imagineland 2023</li>
+                <li>Feira Motim 2024</li>
+                <li>FIQ 2024</li>
+                <li>CCXP 2023, 2024</li>
+            </ul>
+        </div>
 
-            <img class="capamalagueta" src="capamalagueta.jpg" alt="Capa do Quadrinho Malagueta" width="240px">
-            <h2 class="obra">Malagueta</h2>
-                <h5> 2020, Comédia e Aventura </h5>
-                    <p> <b>Malagueta</b> é  minha primeira série de quadrinhos, tendo  sido 
-                    lançado em 2020 nas redes sociais. A série começou como tirinhas
-                    sobre um cachorro diminuto e terrívelmente zangado que causava terror pelas ruas de São Paulo, até que é adotado por Iara, que tenta em vão controlar a criatura. Por ser descompromissado, com humor xulo e retratar problemas urbanos, os quadrinhos se conectou com várias pessoas, tendo viralizado em várias redes e depois de completo, foi compilado e publicado pela <b>Editora Veneta</b> em 2022. <br>
-                    </P>
-                </div>
+        <div class="trabalhos">
+            <h3>Arte e Trabalho</h3>
+            <p>Além de quadrinhos, trabalho com storyboards e roteiros e também faço ilustração que vendo em formato de prints ou  adesivos em eventos. Abaixo aqui alguns dos meus trabalhos.</p>
 
-
-            <div class="irauna">
-                
-             <img class="capairauna" src="irauna.jpg" alt="Capa do Primeiro Volume de Iraúna" width="240px">   
-            <h2 class="obra"> Iraúna do Olhar Âmbar</h2>
-                <h5> 2023, Horror, Comédia e Aventura</h5>
-
-                 <p> <b> Iraúna do Olhar Âmbar</b> é o quadrinho que estou publicando atualmente desde 2023, planejado para ser uma série em três volumes, sendo que o primeiro foi lançado em 2024 pela <b>Editora JBC</b>, no selo JBC Studios. A história de horror e comédia, gira em torno de uma moça que possui habilidade de se comunicar com espirítos, Irene Nogueira, que é chamada por essas entidades de Iraúna. Ela junta essas habilidades com sua profissão de jornalismo, realizando reportangens de figuras estranhas e cômicas. Porém a heroína da história é amaldiçoada por uma poderosa entidade que aterroriza sua família, que cabe a ela encontrar um jeito de se livrar desse terror.</p>
-            </div>     
-
-            <div class="alcance">
-                <img class="redes" src="redesosciais.jpg" alt="Prints de números de seguidores em redes sociais" width="200">
-            <h2> Alcance </h2>
-                    <p> Meu trabalho é conhecido e publicado em redes sociais diferentes, tendo alcançado um público diverso e jovem, sendo bastante conectado com fãs de mangás, animes, jogos e terror.
-                        São bastante engajados e que formam comunidades em redes de canais fechados como WhatssApp e Discord. E também trata-se de um público bastante presente em eventos de cultura pop, 
-                        esses eventos são os principais locais que tenho contato presecial com meus leitores. 
-            </div> 
-            
-            <div class="eventos">
-
-                <img class="evento" src="autor_irauna.jpg" alt="Foto do Pieri próximo ao stand com uma arte da Iraúna" width="260px">
-
-                            <h3> Já participei de eventos como:</h3>
-                            <ul>
-
-                                    <li>Anime Friends 2022, 2023</li>
-                                    <li>Buntantã Gibicon 2022</li>
-                                    <li>Imagineland 2023</li>
-                                    <li>Feira Motim 2024</li>
-                                    <li>FIQ 2024</li>
-                                    <li>CCXP 2023, 2024</li>
-
-
-
-                            </ul>
-
-            </div>            
-                    </p>
-            
-            <div class="arte">        
-            <h2> Arte e Trabalho</h2> 
-                    <p>Além de quadrinhos, trabalho com storyboards e roteiros e também faço ilustração que vendo em formato de prints ou 
-                    adesivos em eventos. Abaixo aqui alguns dos meus trabalhos.
-                    </p>
-            </div>
-            
-            <div class="scroll-container">
-            
+            <div class="container">
                 <img src="poster_irauna.jpg" alt="Poster Irauna">
                 <img src="retrato-iraúna2.jpg" alt="Retrato Iraúna">
                 <img src="238.jpg" alt="Página de Iraúna">
                 <img src="196.jpg" alt="Página de Iraúna">
                 <img src="malagueta.jpg" alt="Arte Malagueta comendo pastel">
+        </div>     
 
-            
-            </div>
-        </main>
+        </div>
 
+           
+    </main>
 
-            <footer>
-
-                
-                <ul class="links">
-                    <li>gabrielcpieri@gmail.com</li>
-                    <li> @caopeta.combr</li>
-                    <li><a href="https://bsky.app/profile/caopeta.com.br" target="_blank"> Bluesky</a></li>
-                    <li><a href="https://www.instagram.com/caopeta.com.br/" target="_blank"> Instagram</a></li>
-                    <li><a href="https://www.tiktok.com/@caopeta.com.br" target="_blank"> TikTok</a></li>
-                    
-               </ul>
-               
-                
-
-            </footer>
-
-
+    <footer>
+    <ul class="links">
+    <li>gabrielcpieri@gmail.com .</li>
+    <li> @caopeta.com.br . </li>
+    <li><a href="https://bsky.app/profile/caopeta.com.br" target="_blank"> Bluesky .</a></li>
+    <li><a href="https://www.instagram.com/caopeta.com.br/" target="_blank"> Instagram .</a></li>
+    <li><a href="https://www.tiktok.com/@caopeta.com.br" target="_blank"> TikTok </a></li>      
+    </ul>
+    </footer>            
+        
+    
 </body>
-
-
-
-
 </html>
